@@ -52,7 +52,8 @@ These tests are for the DAO,Controller and domain classes and check to see if th
 this allows for us to see what methods are not working an example of what a test may look like.
 
 Unfortunately during mergin but after the presentation I seem to have lost all of my test files. I showed on the recording that I did have them included
-along with coverage. as the deadline is coming towards me I find that Ill just have to upload my project as it is. I am greatly dissapointed and discouraged that his happened.
+along with coverage. as the deadline is coming towards me I find that Ill just have to upload my project as it is.
+ I am greatly dissapointed and discouraged that his happened as Ive lost my sql-schema, sql data and testcases for each controller and DAO. 
 
 
 
