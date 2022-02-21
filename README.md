@@ -63,7 +63,7 @@ this allows for us to see what methods are not working an example of what a test
 Unfortunately during mergin but after the presentation I seem to have lost all of my test files. I showed on the recording that I did have them included
 along with coverage. as the deadline is coming towards me I find that Ill just have to upload my project as it is. I am greatly dissapointed and discouraged that his happened.
 
-
+DISREGARD ABOVE AS IN THE FINAL HOUR MY TESTS REAPPEARED DURING MERGING
 
 
 ### And coding style tests
