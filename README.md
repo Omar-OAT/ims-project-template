@@ -99,5 +99,5 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Inspiration
+* Euan Black and Adil Akbarali with their help with issues with that a lot of people had and they helped debug the issues
 * etc
