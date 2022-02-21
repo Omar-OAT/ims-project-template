@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_LUrBIJLBEeyWnokBQ-hRoA" name="ims">
+    <eAnnotations xmi:id="_LgTpYJLBEeyWnokBQ-hRoA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_LgTpYZLBEeyWnokBQ-hRoA" source="codegen">
+        <details xmi:id="_LgTpYpLBEeyWnokBQ-hRoA" key="codegenDirectory" value="/ims/src/main/java"/>
+        <details xmi:id="_LwGY4JLBEeyWnokBQ-hRoA" key="AssociatedSourceCode" value="/ims/src/main/java/com/qa/ims/persistence/dao/CustomerDAO.java;2978791617/1;/ims/src/main/java/com/qa/ims/persistence/dao/Dao.java;2614022924/1;/ims/src/main/java/com/qa/ims/persistence/dao/ItemDAO.java;3952322865/1;/ims/src/main/java/com/qa/ims/persistence/dao/OrderDAO.java;4291448492/1;/ims/src/main/java/com/qa/ims/persistence/dao/order_basketDAO.java;2476963154/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_LmrXIJLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_LmrXIZLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_LmrXIpLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_LmrXI5LBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_LmrXJJLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_LmrXJZLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_Lmr-MJLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_Lmr-MZLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_Lmr-MpLBEeyWnokBQ-hRoA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LmM2AJLBEeyWnokBQ-hRoA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LmOEIJLBEeyWnokBQ-hRoA" name="qa">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LmOrMJLBEeyWnokBQ-hRoA" name="ims">
+          <packagedElement xmi:type="uml:Package" xmi:id="_LmOrMZLBEeyWnokBQ-hRoA" name="persistence">
+            <packagedElement xmi:type="uml:Package" xmi:id="_LmRHc5LBEeyWnokBQ-hRoA" name="domain">
+              <packagedElement xmi:type="uml:Class" xmi:id="_LoswYZLBEeyWnokBQ-hRoA" name="Customer"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_Lo6LwJLBEeyWnokBQ-hRoA" name="Item"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_Lo_EQJLBEeyWnokBQ-hRoA" name="Orders"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_LpEj0JLBEeyWnokBQ-hRoA" name="Order_basket"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_LmTjsJLBEeyWnokBQ-hRoA" name="dao">
+              <packagedElement xmi:type="uml:Class" xmi:id="_LmqJAJLBEeyWnokBQ-hRoA" name="CustomerDAO">
+                <ownedAttribute xmi:id="_LqLXEJLBEeyWnokBQ-hRoA" name="LOGGER" isLeaf="true" isStatic="true" type="_LoriQZLBEeyWnokBQ-hRoA" isReadOnly="true" association="_LqrGUJLBEeyWnokBQ-hRoA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_LqMlMJLBEeyWnokBQ-hRoA" value="LogManager.getLogger()"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_LoulkZLBEeyWnokBQ-hRoA" client="_LmqJAJLBEeyWnokBQ-hRoA" supplier="_Lmyr4JLBEeyWnokBQ-hRoA" contract="_Lmyr4JLBEeyWnokBQ-hRoA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqVIEJLBEeyWnokBQ-hRoA" name="modelFromResultSet" specification="_LpNGsJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqVIEZLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqVIEpLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>Long id = resultSet.getLong(&quot;id&quot;);&#xD;
+		String firstName = resultSet.getString(&quot;first_name&quot;);&#xD;
+		String surname = resultSet.getString(&quot;surname&quot;);&#xD;
+		return new Customer(id, firstName, surname);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqVIE5LBEeyWnokBQ-hRoA" name="readAll" specification="_LmslQJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqVIFJLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LqVIFZLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM customers&quot;);) {&#xD;
+			List&lt;Customer> customers = new ArrayList&lt;>();&#xD;
+			while (resultSet.next()) {&#xD;
+				customers.add(modelFromResultSet(resultSet));&#xD;
+			}&#xD;
+			return customers;&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return new ArrayList&lt;>();&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqVIFpLBEeyWnokBQ-hRoA" name="readLatest" specification="_LmtzYpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqVIF5LBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM customers ORDER BY id DESC LIMIT 1&quot;);) {&#xD;
+			resultSet.next();&#xD;
+			return modelFromResultSet(resultSet);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqVvIJLBEeyWnokBQ-hRoA" name="create" specification="_LpOU0ZLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqVvIZLBEeyWnokBQ-hRoA" name="customer" type="_LoswYZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqVvIpLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;INSERT INTO customers(first_name, surname) VALUES (?, ?)&quot;);) {&#xD;
+			statement.setString(1, customer.getFirstName());&#xD;
+			statement.setString(2, customer.getSurname());&#xD;
+			statement.executeUpdate();&#xD;
+			return readLatest();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqVvI5LBEeyWnokBQ-hRoA" name="read" specification="_LpUbcJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqVvJJLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqVvJZLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;SELECT * FROM customers WHERE id = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			try (ResultSet resultSet = statement.executeQuery();) {&#xD;
+				resultSet.next();&#xD;
+				return modelFromResultSet(resultSet);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqWWMJLBEeyWnokBQ-hRoA" name="update" specification="_LpVpkZLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqWWMZLBEeyWnokBQ-hRoA" name="customer" type="_LoswYZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqWWMpLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;UPDATE customers SET first_name = ?, surname = ? WHERE id = ?&quot;);) {&#xD;
+			statement.setString(1, customer.getFirstName());&#xD;
+			statement.setString(2, customer.getSurname());&#xD;
+			statement.setLong(3, customer.getId());&#xD;
+			statement.executeUpdate();&#xD;
+			return read(customer.getId());&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqW9QJLBEeyWnokBQ-hRoA" name="delete" specification="_LmuacJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqW9QZLBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_LqW9QpLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;DELETE FROM customers WHERE id = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			return statement.executeUpdate();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return 0;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_LmslQJLBEeyWnokBQ-hRoA" name="readAll" method="_LqVIE5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LmslQZLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LmtMUJLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LmtzYpLBEeyWnokBQ-hRoA" name="readLatest" method="_LqVIFpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpOU0JLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LmuacJLBEeyWnokBQ-hRoA" name="delete" method="_LqW9QJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LmvBgJLBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_LmvBgZLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpNGsJLBEeyWnokBQ-hRoA" name="modelFromResultSet" method="_LqVIEJLBEeyWnokBQ-hRoA" raisedException="_LompwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpNGsZLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpNGspLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpOU0ZLBEeyWnokBQ-hRoA" name="create" method="_LqVvIJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpO74JLBEeyWnokBQ-hRoA" name="customer" type="_LoswYZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpO74ZLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpUbcJLBEeyWnokBQ-hRoA" name="read" method="_LqVvI5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpUbcZLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpUbcpLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpVpkZLBEeyWnokBQ-hRoA" name="update" method="_LqWWMJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpVpkpLBEeyWnokBQ-hRoA" name="customer" type="_LoswYZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpWQoJLBEeyWnokBQ-hRoA" type="_LoswYZLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_Lmyr4JLBEeyWnokBQ-hRoA" name="Dao">
+                <ownedOperation xmi:id="_Lmz6AZLBEeyWnokBQ-hRoA" name="readAll">
+                  <ownedParameter xmi:id="_Lm0hEJLBEeyWnokBQ-hRoA" type="_LpYs4JLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lm0hEZLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lm1IIJLBEeyWnokBQ-hRoA" name="delete">
+                  <ownedParameter xmi:id="_Lm1IIZLBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_Lm1IIpLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpbJIJLBEeyWnokBQ-hRoA" name="read">
+                  <ownedParameter xmi:id="_LpbJIZLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpbJIpLBEeyWnokBQ-hRoA" type="_LpYs4JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpcXQJLBEeyWnokBQ-hRoA" name="create">
+                  <ownedParameter xmi:id="_LpcXQZLBEeyWnokBQ-hRoA" name="t" type="_LpYs4JLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpcXQpLBEeyWnokBQ-hRoA" type="_LpYs4JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpeMcJLBEeyWnokBQ-hRoA" name="update">
+                  <ownedParameter xmi:id="_LpeMcZLBEeyWnokBQ-hRoA" name="t" type="_LpYs4JLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpeMcpLBEeyWnokBQ-hRoA" type="_LpYs4JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpfakJLBEeyWnokBQ-hRoA" name="modelFromResultSet" raisedException="_LompwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpfakZLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpfakpLBEeyWnokBQ-hRoA" type="_LpYs4JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_Lm3kYJLBEeyWnokBQ-hRoA" name="ItemDAO">
+                <ownedAttribute xmi:id="_LqSr0JLBEeyWnokBQ-hRoA" name="LOGGER" isLeaf="true" isStatic="true" type="_LoriQZLBEeyWnokBQ-hRoA" isReadOnly="true" association="_LqtikZLBEeyWnokBQ-hRoA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_LqSr0ZLBEeyWnokBQ-hRoA" value="LogManager.getLogger()"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_Lo6y0ZLBEeyWnokBQ-hRoA" client="_Lm3kYJLBEeyWnokBQ-hRoA" supplier="_Lmyr4JLBEeyWnokBQ-hRoA" contract="_Lmyr4JLBEeyWnokBQ-hRoA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqW9Q5LBEeyWnokBQ-hRoA" name="modelFromResultSet" specification="_LphPwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqW9RJLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqW9RZLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>Long id = resultSet.getLong(&quot;id&quot;);&#xD;
+		String itemName = resultSet.getString(&quot;item_name&quot;);&#xD;
+		Long price = resultSet.getLong(&quot;item_price&quot;);&#xD;
+		return new Item(id, itemName, price);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqXkUJLBEeyWnokBQ-hRoA" name="readAll" specification="_Lm4ygJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqXkUZLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LqXkUpLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM items&quot;);) {&#xD;
+			List&lt;Item> items = new ArrayList&lt;>();&#xD;
+			while (resultSet.next()) {&#xD;
+				items.add(modelFromResultSet(resultSet));&#xD;
+			}&#xD;
+			return items;&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return new ArrayList&lt;>();&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqXkU5LBEeyWnokBQ-hRoA" name="readLatest" specification="_Lm6nspLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqXkVJLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM items ORDER BY id DESC LIMIT 1&quot;);) {&#xD;
+			resultSet.next();&#xD;
+			return modelFromResultSet(resultSet);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqXkVZLBEeyWnokBQ-hRoA" name="create" specification="_LplhMJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqXkVpLBEeyWnokBQ-hRoA" name="item" type="_Lo6LwJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqXkV5LBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;INSERT INTO items(item_name, item_price) VALUES (?, ?)&quot;);) {&#xD;
+			statement.setString(1, item.getItemName());&#xD;
+			statement.setLong(2, item.getPrice());&#xD;
+			statement.executeUpdate();&#xD;
+			return readLatest();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYLYJLBEeyWnokBQ-hRoA" name="read" specification="_LppLkZLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYLYZLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqYLYpLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;SELECT * FROM items WHERE id = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			try (ResultSet resultSet = statement.executeQuery();) {&#xD;
+				resultSet.next();&#xD;
+				return modelFromResultSet(resultSet);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYLY5LBEeyWnokBQ-hRoA" name="update" specification="_Lprn0JLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYLZJLBEeyWnokBQ-hRoA" name="item" type="_Lo6LwJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqYLZZLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;UPDATE items SET item_name = ?, item_price = ? WHERE id = ?&quot;);) {&#xD;
+			statement.setString(1, item.getItemName());&#xD;
+			statement.setLong(2, item.getPrice());&#xD;
+			statement.setLong(3, item.getId());&#xD;
+			statement.executeUpdate();&#xD;
+			return read(item.getId());&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYLZpLBEeyWnokBQ-hRoA" name="delete" specification="_Lm7OwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYLZ5LBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_LqYLaJLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;DELETE FROM items WHERE id = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			return statement.executeUpdate();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return 0;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_Lm4ygJLBEeyWnokBQ-hRoA" name="readAll" method="_LqXkUJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lm5ZkJLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lm5ZkZLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lm6nspLBEeyWnokBQ-hRoA" name="readLatest" method="_LqXkU5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpkTEpLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lm7OwJLBEeyWnokBQ-hRoA" name="delete" method="_LqYLZpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lm710JLBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_Lm710ZLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LphPwJLBEeyWnokBQ-hRoA" name="modelFromResultSet" method="_LqW9Q5LBEeyWnokBQ-hRoA" raisedException="_LompwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lph20JLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_Lph20ZLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LplhMJLBEeyWnokBQ-hRoA" name="create" method="_LqXkVZLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LplhMZLBEeyWnokBQ-hRoA" name="item" type="_Lo6LwJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LplhMpLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LppLkZLBEeyWnokBQ-hRoA" name="read" method="_LqYLYJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LppLkpLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LppyoJLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lprn0JLBEeyWnokBQ-hRoA" name="update" method="_LqYLY5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lprn0ZLBEeyWnokBQ-hRoA" name="item" type="_Lo6LwJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_Lprn0pLBEeyWnokBQ-hRoA" type="_Lo6LwJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_Lm_gMJLBEeyWnokBQ-hRoA" name="OrderDAO">
+                <ownedAttribute xmi:id="_LqTS4JLBEeyWnokBQ-hRoA" name="LOGGER" isLeaf="true" isStatic="true" type="_LoriQZLBEeyWnokBQ-hRoA" isReadOnly="true" association="_LquwsZLBEeyWnokBQ-hRoA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_LqTS4ZLBEeyWnokBQ-hRoA" value="LogManager.getLogger()"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_LpASYZLBEeyWnokBQ-hRoA" client="_Lm_gMJLBEeyWnokBQ-hRoA" supplier="_Lmyr4JLBEeyWnokBQ-hRoA" contract="_Lmyr4JLBEeyWnokBQ-hRoA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYycJLBEeyWnokBQ-hRoA" name="modelFromResultSet" specification="_LpvSMJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYycZLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqYycpLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>Long id = resultSet.getLong(&quot;OrderID&quot;);&#xD;
+		Long fkCustID = resultSet.getLong(&quot;customerID&quot;);&#xD;
+		Long orderSum = resultSet.getLong(&quot;orderTotal&quot;);&#xD;
+//		Long fkItemID = resultSet.getLong(&quot;fkItemID&quot;);&#xD;
+//		Long quantity = resultSet.getLong(&quot;quantity&quot;);&#xD;
+		return new Orders(id, fkCustID);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYyc5LBEeyWnokBQ-hRoA" name="readAll" specification="_LnAuUJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYydJLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LqYydZLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM orders&quot;);) {&#xD;
+			List&lt;Orders> orders= new ArrayList&lt;>();&#xD;
+			while (resultSet.next()) {&#xD;
+				orders.add(modelFromResultSet(resultSet));&#xD;
+			}&#xD;
+			return orders;&#xD;
+		} catch (SQLException e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return new ArrayList&lt;>();&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYydpLBEeyWnokBQ-hRoA" name="readLatest" specification="_LnB8cpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYyd5LBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement.executeQuery(&quot;SELECT * FROM orders ORDER BY OrderID DESC LIMIT 1&quot;);) {&#xD;
+			resultSet.next();&#xD;
+			return modelFromResultSet(resultSet);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqYyeJLBEeyWnokBQ-hRoA" name="create" specification="_Lpy8kJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqYyeZLBEeyWnokBQ-hRoA" name="orders" type="_Lo_EQJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqYyepLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;INSERT INTO orders(customerID) VALUES (?)&quot;);) {&#xD;
+			&#xD;
+			statement.setLong(1, orders.getfkCustID());&#xD;
+			&#xD;
+			statement.executeUpdate();&#xD;
+			&#xD;
+			return readLatest();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqZZgJLBEeyWnokBQ-hRoA" name="read" specification="_Lp1_4JLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqZZgZLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqZZgpLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;SELECT * FROM order_basket WHERE fkorderID = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			try (ResultSet resultSet = statement.executeQuery();) {&#xD;
+				resultSet.next();&#xD;
+				return modelFromResultSet(resultSet);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqZZg5LBEeyWnokBQ-hRoA" name="update" specification="_Lp31EpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqZZhJLBEeyWnokBQ-hRoA" name="orders" type="_Lo_EQJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqZZhZLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;UPDATE orders SET customerID = ? WHERE OrderID = ?&quot;);) {&#xD;
+			&#xD;
+			&#xD;
+			statement.setLong(1, orders.getfkCustID());&#xD;
+			statement.setLong(2, orders.getId());&#xD;
+			&#xD;
+			statement.executeUpdate();&#xD;
+			return read(orders.getId());&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqZZhpLBEeyWnokBQ-hRoA" name="delete" specification="_LnCjgJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqZZh5LBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_LqZZiJLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;DELETE FROM orders WHERE OrderID = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			return statement.executeUpdate();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return 0;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_LnAuUJLBEeyWnokBQ-hRoA" name="readAll" method="_LqYyc5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LnAuUZLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LnAuUpLBEeyWnokBQ-hRoA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LnB8cpLBEeyWnokBQ-hRoA" name="readLatest" method="_LqYydpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpwgUpLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LnCjgJLBEeyWnokBQ-hRoA" name="delete" method="_LqZZhpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LnCjgZLBEeyWnokBQ-hRoA" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_LnDKkJLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LpvSMJLBEeyWnokBQ-hRoA" name="modelFromResultSet" method="_LqYycJLBEeyWnokBQ-hRoA" raisedException="_LompwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LpvSMZLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpvSMpLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lpy8kJLBEeyWnokBQ-hRoA" name="create" method="_LqYyeJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lpy8kZLBEeyWnokBQ-hRoA" name="orders" type="_Lo_EQJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LpzjoJLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lp1_4JLBEeyWnokBQ-hRoA" name="read" method="_LqZZgJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lp1_4ZLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_Lp3OAJLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lp31EpLBEeyWnokBQ-hRoA" name="update" method="_LqZZg5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lp31E5LBEeyWnokBQ-hRoA" name="orders" type="_Lo_EQJLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_Lp5DMJLBEeyWnokBQ-hRoA" type="_Lo_EQJLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_LnIDEJLBEeyWnokBQ-hRoA" name="order_basketDAO">
+                <ownedAttribute xmi:id="_LqT58JLBEeyWnokBQ-hRoA" name="LOGGER" isLeaf="true" isStatic="true" type="_LoriQZLBEeyWnokBQ-hRoA" isReadOnly="true" association="_Lqwl4JLBEeyWnokBQ-hRoA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_LqT58ZLBEeyWnokBQ-hRoA" value="LogManager.getLogger()"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqZZiZLBEeyWnokBQ-hRoA" name="modelFromResultSet" specification="_Lp_J0JLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqZZipLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqZZi5LBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>Long fkorderID = resultSet.getLong(&quot;fkOrderID&quot;);&#xD;
+		Long fkItemID = resultSet.getLong(&quot;fkItemID&quot;);&#xD;
+		Long quantity = resultSet.getLong(&quot;quantity&quot;);&#xD;
+		return new Order_basket(fkorderID, fkItemID, quantity);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqaAkJLBEeyWnokBQ-hRoA" name="readLatest" specification="_LnJRMJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqaAkZLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				Statement statement = connection.createStatement();&#xD;
+				ResultSet resultSet = statement&#xD;
+						.executeQuery(&quot;SELECT * FROM order_basket ORDER BY fkorderID DESC LIMIT 1&quot;);) {&#xD;
+			resultSet.next();&#xD;
+			return modelFromResultSet(resultSet);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqaAkpLBEeyWnokBQ-hRoA" name="read" specification="_Lp_w4ZLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqaAk5LBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqaAlJLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;SELECT * FROM order_basket WHERE fkorderID = ?&quot;);) {&#xD;
+			statement.setLong(1, id);&#xD;
+			try (ResultSet resultSet = statement.executeQuery();) {&#xD;
+				resultSet.next();&#xD;
+				return modelFromResultSet(resultSet);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqanoJLBEeyWnokBQ-hRoA" name="update" specification="_LqA_AJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqanoZLBEeyWnokBQ-hRoA" name="order_basket" type="_LpEj0JLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqanopLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&#xD;
+						&quot;UPDATE order_basket SET fkItemID = ?, quantity = ?,  WHERE fkorderID = ?&quot;);) {&#xD;
+&#xD;
+			statement.setLong(1, order_basket.getfkOrderID());&#xD;
+			statement.setLong(2, order_basket.getfkItemID());&#xD;
+			statement.setLong(3, order_basket.getQuantity());&#xD;
+&#xD;
+			statement.executeUpdate();&#xD;
+			return read(order_basket.getfkOrderID());&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqbOsJLBEeyWnokBQ-hRoA" name="orderitem" specification="_LqCNIJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqbOsZLBEeyWnokBQ-hRoA" name="order_basket" type="_LpEj0JLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqbOspLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;INSERT INTO order_basket(fkorderID,fkItemID,quantity) VALUES (?,?,?)&quot;);) {&#xD;
+			statement.setLong(1, order_basket.getfkOrderID());&#xD;
+			statement.setLong(2, order_basket.getfkItemID());&#xD;
+			statement.setLong(3, order_basket.getQuantity());&#xD;
+			statement.executeUpdate();&#xD;
+			return readLatest();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqbOs5LBEeyWnokBQ-hRoA" name="deleteItemfromBasket" specification="_LqECUJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqbOtJLBEeyWnokBQ-hRoA" name="fkItemID" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqbOtZLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection&#xD;
+						.prepareStatement(&quot;DELETE  FROM order_basket WHERE fkItemID = ? &quot;);) {&#xD;
+			&#xD;
+			statement.setLong(1, fkItemID);&#xD;
+			statement.executeUpdate();&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqbOtpLBEeyWnokBQ-hRoA" name="modelFromResultSetOT" specification="_LqFQcJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqbOt5LBEeyWnokBQ-hRoA" name="resultSetCost" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqbOuJLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return resultSetCost.getLong(&quot;fkOrderID&quot;) + &quot;basket total cost:&quot; + resultSetCost.getLong(&quot;Ordertotal&quot;);&#xD;
+		&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LqbOuZLBEeyWnokBQ-hRoA" name="CalculateTotal" specification="_LqGekJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqbOupLBEeyWnokBQ-hRoA" name="fkorderID" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqbOu5LBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>try (Connection connection = DBUtils.getInstance().getConnection();&#xD;
+				PreparedStatement statement = connection.prepareStatement(&quot;SELECT ob.fkorderID,SUM(i.item_price*ob.quantity) AS Ordertotal FROM order_basket ob JOIN items i ON i.id=ob.fkItemID WHERE ob.fkorderID=? GROUP by ob.fkorderID;&quot;);) {&#xD;
+			statement.setLong(1, fkorderID);&#xD;
+			ResultSet resultSetCost = statement.executeQuery();&#xD;
+			resultSetCost.next();&#xD;
+			return modelFromResultSetOT(resultSetCost);&#xD;
+		} catch (Exception e) {&#xD;
+			LOGGER.debug(e);&#xD;
+			LOGGER.error(e.getMessage());&#xD;
+		}&#xD;
+		return null;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_LnJRMJLBEeyWnokBQ-hRoA" name="readLatest" method="_LqaAkJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lp_w4JLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lp_J0JLBEeyWnokBQ-hRoA" name="modelFromResultSet" method="_LqZZiZLBEeyWnokBQ-hRoA" raisedException="_LompwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lp_J0ZLBEeyWnokBQ-hRoA" name="resultSet" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_Lp_J0pLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Lp_w4ZLBEeyWnokBQ-hRoA" name="read" method="_LqaAkpLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_Lp_w4pLBEeyWnokBQ-hRoA" name="id" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqAX8JLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LqA_AJLBEeyWnokBQ-hRoA" name="update" method="_LqanoJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqA_AZLBEeyWnokBQ-hRoA" name="order_basket" type="_LpEj0JLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqBmEJLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LqCNIJLBEeyWnokBQ-hRoA" name="orderitem" method="_LqbOsJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqCNIZLBEeyWnokBQ-hRoA" name="order_basket" type="_LpEj0JLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqC0MJLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LqECUJLBEeyWnokBQ-hRoA" name="deleteItemfromBasket" method="_LqbOs5LBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqECUZLBEeyWnokBQ-hRoA" name="fkItemID" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqECUpLBEeyWnokBQ-hRoA" type="_LpEj0JLBEeyWnokBQ-hRoA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LqFQcJLBEeyWnokBQ-hRoA" name="modelFromResultSetOT" method="_LqbOtpLBEeyWnokBQ-hRoA" raisedException="_LompwJLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqFQcZLBEeyWnokBQ-hRoA" name="resultSetCost" type="_LolboZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqF3gJLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_LqGekJLBEeyWnokBQ-hRoA" name="CalculateTotal" method="_LqbOuZLBEeyWnokBQ-hRoA">
+                  <ownedParameter xmi:id="_LqGekZLBEeyWnokBQ-hRoA" name="fkorderID" type="_LpRYIZLBEeyWnokBQ-hRoA"/>
+                  <ownedParameter xmi:id="_LqGekpLBEeyWnokBQ-hRoA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_LpYs4JLBEeyWnokBQ-hRoA" name="T"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_LqrGUJLBEeyWnokBQ-hRoA" name="" memberEnd="_LqrGUZLBEeyWnokBQ-hRoA _LqLXEJLBEeyWnokBQ-hRoA">
+                <ownedEnd xmi:id="_LqrGUZLBEeyWnokBQ-hRoA" name="" type="_LmqJAJLBEeyWnokBQ-hRoA" association="_LqrGUJLBEeyWnokBQ-hRoA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_LqtikZLBEeyWnokBQ-hRoA" name="" memberEnd="_LqtikpLBEeyWnokBQ-hRoA _LqSr0JLBEeyWnokBQ-hRoA">
+                <ownedEnd xmi:id="_LqtikpLBEeyWnokBQ-hRoA" name="" type="_Lm3kYJLBEeyWnokBQ-hRoA" association="_LqtikZLBEeyWnokBQ-hRoA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_LquwsZLBEeyWnokBQ-hRoA" name="" memberEnd="_LquwspLBEeyWnokBQ-hRoA _LqTS4JLBEeyWnokBQ-hRoA">
+                <ownedEnd xmi:id="_LquwspLBEeyWnokBQ-hRoA" name="" type="_Lm_gMJLBEeyWnokBQ-hRoA" association="_LquwsZLBEeyWnokBQ-hRoA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_Lqwl4JLBEeyWnokBQ-hRoA" name="" memberEnd="_Lqwl4ZLBEeyWnokBQ-hRoA _LqT58JLBEeyWnokBQ-hRoA">
+                <ownedEnd xmi:id="_Lqwl4ZLBEeyWnokBQ-hRoA" name="" type="_LnIDEJLBEeyWnokBQ-hRoA" association="_Lqwl4JLBEeyWnokBQ-hRoA"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_LmRHdJLBEeyWnokBQ-hRoA" name="utils">
+            <packagedElement xmi:type="uml:Class" xmi:id="_LotXcZLBEeyWnokBQ-hRoA" name="DBUtils"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LmP5UJLBEeyWnokBQ-hRoA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LmP5UZLBEeyWnokBQ-hRoA" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LojmcJLBEeyWnokBQ-hRoA" name="Connection"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Lok0kJLBEeyWnokBQ-hRoA" name="PreparedStatement"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LolboZLBEeyWnokBQ-hRoA" name="ResultSet"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LompwJLBEeyWnokBQ-hRoA" name="SQLException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LonQ0ZLBEeyWnokBQ-hRoA" name="Statement"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LmQgYJLBEeyWnokBQ-hRoA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Lon34ZLBEeyWnokBQ-hRoA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LopGAZLBEeyWnokBQ-hRoA" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LpRYIJLBEeyWnokBQ-hRoA" name="lang">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LpRYIZLBEeyWnokBQ-hRoA" name="Long"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LmQgYZLBEeyWnokBQ-hRoA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LmRHcJLBEeyWnokBQ-hRoA" name="apache">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LmRHcZLBEeyWnokBQ-hRoA" name="logging">
+          <packagedElement xmi:type="uml:Package" xmi:id="_LmRHcpLBEeyWnokBQ-hRoA" name="log4j">
+            <packagedElement xmi:type="uml:Class" xmi:id="_Loq7MZLBEeyWnokBQ-hRoA" name="LogManager"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_LoriQZLBEeyWnokBQ-hRoA" name="Logger"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_LgUQcJLBEeyWnokBQ-hRoA">
+      <eAnnotations xmi:id="_LgUQcZLBEeyWnokBQ-hRoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_LgU3gJLBEeyWnokBQ-hRoA" base_Package="_LUrBIJLBEeyWnokBQ-hRoA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LmtMUZLBEeyWnokBQ-hRoA" base_Element="_LmslQJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LmtzYJLBEeyWnokBQ-hRoA" base_Element="_LmslQJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LmtzYZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LmvBgpLBEeyWnokBQ-hRoA" base_Element="_LmuacJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LmvokJLBEeyWnokBQ-hRoA" base_Element="_LmuacJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LmvokZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_Lmz6AJLBEeyWnokBQ-hRoA" genericsValue="T" base_Element="_Lmyr4JLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Lm6AoJLBEeyWnokBQ-hRoA" base_Element="_Lm4ygJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_Lm6nsJLBEeyWnokBQ-hRoA" base_Element="_Lm4ygJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_Lm6nsZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Lm710pLBEeyWnokBQ-hRoA" base_Element="_Lm7OwJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_Lm8c4JLBEeyWnokBQ-hRoA" base_Element="_Lm7OwJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_Lm8c4ZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LnBVYJLBEeyWnokBQ-hRoA" base_Element="_LnAuUJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LnB8cJLBEeyWnokBQ-hRoA" base_Element="_LnAuUJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LnB8cZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LnDKkZLBEeyWnokBQ-hRoA" base_Element="_LnCjgJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LnDxoJLBEeyWnokBQ-hRoA" base_Element="_LnCjgJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LnDxoZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_LokNgJLBEeyWnokBQ-hRoA" base_Element="_LojmcJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LolboJLBEeyWnokBQ-hRoA" base_Element="_Lok0kJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LomCsJLBEeyWnokBQ-hRoA" base_Element="_LolboZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LonQ0JLBEeyWnokBQ-hRoA" base_Element="_LompwJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_Lon34JLBEeyWnokBQ-hRoA" base_Element="_LonQ0ZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LopGAJLBEeyWnokBQ-hRoA" base_Element="_Lon34ZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_Loq7MJLBEeyWnokBQ-hRoA" base_Element="_LopGAZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LoriQJLBEeyWnokBQ-hRoA" base_Element="_Loq7MZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LoswYJLBEeyWnokBQ-hRoA" base_Element="_LoriQZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LotXcJLBEeyWnokBQ-hRoA" base_Element="_LoswYZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LoulkJLBEeyWnokBQ-hRoA" base_Element="_LotXcZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Generics xmi:id="_LovzsJLBEeyWnokBQ-hRoA" genericsValue="Customer" base_Element="_LoulkZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_Lo6y0JLBEeyWnokBQ-hRoA" base_Element="_Lo6LwJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Generics xmi:id="_Lo8A8JLBEeyWnokBQ-hRoA" genericsValue="Item" base_Element="_Lo6y0ZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LpASYJLBEeyWnokBQ-hRoA" base_Element="_Lo_EQJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Generics xmi:id="_LpCHkJLBEeyWnokBQ-hRoA" genericsValue="Orders" base_Element="_LpASYZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LpFK4JLBEeyWnokBQ-hRoA" base_Element="_LpEj0JLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpNtwJLBEeyWnokBQ-hRoA" base_Element="_LpNGsJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpNtwZLBEeyWnokBQ-hRoA" base_Element="_LpNGsJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpNtwpLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpPi8JLBEeyWnokBQ-hRoA" base_Element="_LpOU0ZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpQKAJLBEeyWnokBQ-hRoA" base_Element="_LpOU0ZLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpQxEJLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_LpT0YJLBEeyWnokBQ-hRoA" base_Element="_LpRYIZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpVCgJLBEeyWnokBQ-hRoA" base_Element="_LpUbcJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpVCgZLBEeyWnokBQ-hRoA" base_Element="_LpUbcJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpVpkJLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpWQoZLBEeyWnokBQ-hRoA" base_Element="_LpVpkZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpXewJLBEeyWnokBQ-hRoA" base_Element="_LpVpkZLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpXewZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_LpZ7AJLBEeyWnokBQ-hRoA" base_Element="_LpYs4JLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpjE8JLBEeyWnokBQ-hRoA" base_Element="_LphPwJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpkTEJLBEeyWnokBQ-hRoA" base_Element="_LphPwJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpkTEZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Lpn9cJLBEeyWnokBQ-hRoA" base_Element="_LplhMJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpokgJLBEeyWnokBQ-hRoA" base_Element="_LplhMJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LppLkJLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LppyoZLBEeyWnokBQ-hRoA" base_Element="_LppLkZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LprAwJLBEeyWnokBQ-hRoA" base_Element="_LppLkZLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LprAwZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpsO4JLBEeyWnokBQ-hRoA" base_Element="_Lprn0JLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpsO4ZLBEeyWnokBQ-hRoA" base_Element="_Lprn0JLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpsO4pLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpvSM5LBEeyWnokBQ-hRoA" base_Element="_LpvSMJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_LpwgUJLBEeyWnokBQ-hRoA" base_Element="_LpvSMJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_LpwgUZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LpzjoZLBEeyWnokBQ-hRoA" base_Element="_Lpy8kJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_Lp0xwJLBEeyWnokBQ-hRoA" base_Element="_Lpy8kJLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_Lp0xwZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Lp3OAZLBEeyWnokBQ-hRoA" base_Element="_Lp1_4JLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_Lp31EJLBEeyWnokBQ-hRoA" base_Element="_Lp1_4JLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_Lp31EZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Lp5DMZLBEeyWnokBQ-hRoA" base_Element="_Lp31EpLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Annotations xmi:id="_Lp6RUJLBEeyWnokBQ-hRoA" base_Element="_Lp31EpLBEeyWnokBQ-hRoA">
+    <annotations xmi:id="_Lp6RUZLBEeyWnokBQ-hRoA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_LqtikJLBEeyWnokBQ-hRoA" base_Element="_LqrGUJLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_LquwsJLBEeyWnokBQ-hRoA" base_Element="_LqtikZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_Lqv-0JLBEeyWnokBQ-hRoA" base_Element="_LquwsZLBEeyWnokBQ-hRoA"/>
+  <UMLLabProfile:Reference xmi:id="_Lq1eYJLBEeyWnokBQ-hRoA" base_Element="_Lqwl4JLBEeyWnokBQ-hRoA"/>
+</xmi:XMI>
