@@ -1,0 +1,7 @@
+com.qa.ims
+com.qa.ims.controller
+com.qa.ims.controllers
+com.qa.ims.exceptions
+com.qa.ims.persistence.dao
+com.qa.ims.persistence.domain
+com.qa.ims.utils
