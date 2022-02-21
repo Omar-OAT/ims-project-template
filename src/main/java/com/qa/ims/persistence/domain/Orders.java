@@ -5,7 +5,7 @@ public class Orders {
 	private Long id;
 	private Long fkCustID;
 	private Long fkItemID;
-	private Long orderSum;
+	//private Long orderSum;
 
 	public Orders(Long fkCustID) {
 		this.setfkCustID(fkCustID);
