@@ -36,11 +36,7 @@ public class Orders {
 		
 	}
 	
-	
-	public Long getOrderSum(){
-		
-		return orderSum;
-	}
+
 	
 
 	public Long getId() {
