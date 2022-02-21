@@ -11,6 +11,9 @@ This project was handed as a template and working upon it by creating additional
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+THIS COULD BE BROKEN
+I have had problems with merging where my tests dissapeared into limbo and could not merge from dev. during the mergin a whole bunch of new files appeared from nowhere so im not sure if it will work as I intended it to. So if it doesnt work the recording showcases it in action.
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
